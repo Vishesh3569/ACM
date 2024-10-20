@@ -1,0 +1,34 @@
+.footer {
+    background-color: #f8f8f8; /* Light gray background */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Center align text */
+    position: relative; /* Position footer relative */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px; /* Max width for footer content */
+    margin: 0 auto; /* Center the content */
+}
+
+.footer-links {
+    margin: 10px 0; /* Margin around links */
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark text color */
+    margin: 0 10px; /* Space between links */
+}
+
+.footer-links span {
+    color: #333; /* Same color as links */
+}
+
+.footer-address {
+    margin-top: 10px; /* Margin above address */
+    font-size: 14px; /* Smaller font size for address */
+    color: #666; /* Light gray for address text */
+}

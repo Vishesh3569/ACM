@@ -1,0 +1,38 @@
+/* Updated App.css */
+
+/* Ensure the body and html take up full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.main-content {
+  flex: 1; /* This makes sure the content grows to fill space, pushing footer down */
+  padding: 20px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 10px;
+  }
+}

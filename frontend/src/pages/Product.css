@@ -1,0 +1,87 @@
+/* ProductPage.css */
+.product-page {
+    display: flex;
+    padding: 20px;
+    margin-top:8vh;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 20%; /* Sidebar occupies 20% of the page width */
+    background-color: #f8f8f8; /* Light background for sidebar */
+    padding: 20px;
+    border-right: 1px solid #ddd; /* Border to separate sidebar and content */
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar li:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  /* Product Cards Container */
+  .products {
+    width: 80%; /* Products take 80% of the page */
+    padding-left: 20px; /* Padding to add some space between sidebar and products */
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: space-between; /* Add space between cards */
+  }
+  .category-section {
+    width: 20%;
+    padding: 20px;
+    background-color: white; /* Light background to make categories stand out */
+  }
+  
+  .category-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Slightly darker color for the heading */
+  }
+  
+  .category-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .category-section li {
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background-color: #000; /* Black background for category boxes */
+    color: #fff; /* White text */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Add hover effect */
+  .category-section li:hover {
+    transform: translateY(-5px); /* Gives a floating effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Darker and larger shadow on hover */
+  }
+  
+  .category-section li:active {
+    transform: translateY(0); /* Reset position when clicked */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Slightly recessed look */
+  }
+  
+  

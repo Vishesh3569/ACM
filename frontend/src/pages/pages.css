@@ -1,0 +1,158 @@
+
+.Banner {
+    width: 100vw; /* Full viewport width */
+    height:52vw;
+
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  margin-top: 69px; /* Remove any default margin */
+  padding: 0; /* Remove padding */
+  display: block; 
+
+}
+.Banner-image {
+    width: 100%; /* Makes the image take full width of the container */
+  height: 100%; /* Makes the image take full height of the container */
+  object-fit: cover;
+}
+
+.banner-link {
+    position: absolute; /* Allows text to be positioned over the image */
+    top: 30%; 
+    left: 70%; 
+   
+    text-decoration: none; /* Removes underline from the link */
+
+
+    
+    color: white; /* Makes the text white */
+    
+   
+  }
+  
+  .banner-link:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Changes background on hover */
+  }
+  .banner-text {
+    font-size:5vw;
+    font-family:monospace;
+    
+
+    
+    
+  }
+  .banner-text:hover{
+    font-weight: 600;
+    color:whitesmoke;
+  }
+
+  .Trending {
+    display : flex;
+    flex-direction: column;
+    padding-left: 25%;
+  
+  align-items: center;     /* Centers items vertically */
+  height: 50vh; 
+    margin-top: 20px;
+    width: 60%;
+ 
+  gap: 10px
+  }
+  .paragraph-text {
+    font-family:monospace;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+  h1{
+    font-size: 6vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  h3,h1,p {
+    margin:0;
+    padding:0;
+  }
+  .Trending-button {
+    
+  appearance: none;
+  background-color: #000000;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size:16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 20px;
+  min-width: 0px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+  will-change: transform;
+}
+
+
+.Card-Container {
+    display: flex; /* Enable flexbox */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: space-around; /* Space cards evenly */
+    margin: 20px; /* Margin around the container */
+}
+
+/* Optionally, set a max-width for cards */
+.card {
+    max-width: 300px; /* Adjust width as needed */
+    margin: 10px; /* Space between cards */
+}
+.Heading {
+    width:100%;
+    margin:30px;
+    font-size: 2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+@media screen and (max-width: 768px){
+  .Trending-button {
+    
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size:16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 20px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 14px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 40%;
+    will-change: transform;
+  }
+  
+}
+
+
+  
