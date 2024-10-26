@@ -13,6 +13,7 @@ import { AuthProvider } from './context/AuthContext';
 import CheckoutPage from './pages/Checkout';
 import Payment from './pages/Payment';
 import Seller from './pages/Seller';
+import SearchResults from './pages/SearchPage';
 
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/checkout" element={<CheckoutPage />} />
         <Route path='/payment' element={<Payment />}/>
         <Route path='/seller' element={<Seller />} />
+        <Route path='/search' element={<SearchResults />} />
       </Routes>
       </div>
       <Footer></Footer>

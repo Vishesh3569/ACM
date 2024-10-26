@@ -14,6 +14,7 @@
   border-bottom: 1px solid #f0f0f0;
 }
 
+
 .navbar-brand {
   flex-grow: 1;
 }
@@ -82,6 +83,26 @@
 .bar.open {
   background-color: white;
 }
+
+.search-form {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.search-input {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #333;
+}
+
 
 /* Mobile view - show hamburger menu */
 @media (max-width: 768px) {

@@ -2,15 +2,19 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'; 
 import { useAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    const navigate=useNavigate();
     const [searchQuery, setSearchQuery] = useState('');
     const { isLoggedIn, logout } = useAuth();
     const [menuOpen, setMenuOpen] = useState(false); // State to manage mobile menu
 
     const handleSearch = (e) => {
         e.preventDefault();
-        console.log('Searching for:', searchQuery);
+        if (searchQuery.trim()) {
+            navigate(`/search?query=${searchQuery}`);
+        }
     };
 
     const toggleMenu = () => {
@@ -41,14 +45,17 @@ const Navbar = () => {
                 )}
                 <Link to="/cart" className="nav-item">Cart</Link>
 
-                {/* <form className="search-form" onSubmit={handleSearch}>
-        <input 
-          type="text" 
-           
-          className="search-input" 
-          value={searchQuery} 
-          onChange={(e) => setSearchQuery(e.target.value)}
-        /form>*/}
+                {/* Search Form */}
+                <form className="search-form" onSubmit={handleSearch}>
+                    <input 
+                        type="text"
+                        className="search-input" 
+                        placeholder="Search products"
+                        value={searchQuery} 
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                    />
+                </form>
+                
                 <Link to="/seller" className="nav-item seller-btn">Become a Seller</Link>
             </div>
         </nav>

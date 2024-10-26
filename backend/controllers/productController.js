@@ -54,15 +54,16 @@ const getProductById = async (req, res) => {
 };
 
 const searchProducts = async (req, res) => {
-  const { name } = req.query; // Get the search term from query parameters
+  const { query } = req.query; // Get the search term from query parameters
 
-  if (!name) {
+
+  if (!query) {
     return res.status(400).json({ message: 'Please provide a product name to search.' });
   }
 
   try {
     // Use regex for case-insensitive search
-    const products = await Product.find({ name: { $regex: name, $options: 'i' } });
+    const products = await Product.find({ name: { $regex: query, $options: 'i' } });
     res.json(products); // Return the found products
   } catch (error) {
     console.error(error);

@@ -21,7 +21,7 @@ const ProductDetails = () => {
     fetchProduct();
   }, [id]);
 
-  const { addToCart } = useContext(CartContext); // Use CartContext
+  const { addToCart } = useContext(CartContext); 
   
 
   
